@@ -17,8 +17,3 @@ Tobias and Mustafa
 </table>
 
 
- <td>A Baby</td>
-    <td>Boy</td> 
-    <td>1</td>
-  </tr>
-</table>
