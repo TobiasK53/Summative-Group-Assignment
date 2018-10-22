@@ -15,3 +15,10 @@ Tobias and Mustafa
     <td>50</td>
   </tr>
 </table>
+
+
+ <td>A Baby</td>
+    <td>Boy</td> 
+    <td>1</td>
+  </tr>
+</table>
