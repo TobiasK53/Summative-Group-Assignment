@@ -3,6 +3,8 @@ Tobias and Mustafa
 <br>This is where we will store the codes for our amazing project!<br>
 <br>LOVE is our theme ❤<br>
 <br>❤It is important to love❤<br>
+
+Things we Need In Our Game
 Background Art Into Game
 Import Our Drawings
 Develop Characters
