@@ -12,5 +12,7 @@ Background Art Into Game<br>
 <br>Coding the Animations (JS)<br>
 <br>Coding HTML<br>
 <br>Determine what your workflow is... Khan Academy, p5 online editor, vscode/atom<br>
+link to project:
+https://www.khanacademy.org/profile/kaid_519599914215267099434006/projects
 
 
