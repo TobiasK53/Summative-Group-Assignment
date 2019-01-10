@@ -207,4 +207,4 @@ text("Winner!", 200, 150);
         yPositions.push(random(0,371));
         currentScene++;
     };
-    
+    var x;
