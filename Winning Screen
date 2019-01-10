@@ -1,0 +1,13 @@
+//background
+background(15, 112, 0);
+
+
+textSize(37);
+text("You Have Defeated \n The Fire Bunnies", 37, 227);
+if(mouseIsPressed && mouseY<=200 && mouseY >=0){
+        fill(189, 15, 15);
+    }
+rect(439,153,220,40);
+textSize(67);
+fill(43, 255, 0);
+text("Winner!", 90, 183);
