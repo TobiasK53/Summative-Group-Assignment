@@ -1,8 +1,8 @@
 var xPositions = [100,200];
 var yPositions = [0,100];
-
+var gameOver = 0;
 var currentScene=0;
-
+var stats;
 var drawScene1 = function() {
    background(135, 50, 148); {
 textSize(39);
@@ -175,14 +175,30 @@ draw = function() {
                 rabbits[i].hop();
             }
         }
+        println(gameOver);
+        if(rabbits[i].y<20){
+            gameOver=1;
+             //background
+background(15, 112, 0);
+
+
+textSize(37);
+text("You Have Defeated \n The Fire Bunnies", 193, 227);
+if(mouseIsPressed && mouseY<=200 && mouseY >=0){
+        fill(189, 15, 15);
+    }
+rect(439,153,220,40);
+textSize(67);
+fill(43, 255, 0);
+text("Winner!", 200, 150);
+        }
     }
     
     //Draw the button
     btn1.draw();
 };
-    }else{
-        background(255, 0, 0);
-        text("The end",10,10,40,40);
+    }else if (gameOver){
+       
     }
 };
 
@@ -191,4 +207,3 @@ draw = function() {
         yPositions.push(random(0,371));
         currentScene++;
     };
-    
