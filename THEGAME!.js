@@ -1,4 +1,6 @@
+var song;
 var xPositions = [100,200];
+var name=["Nuumair","Yusuf","Moose","Tobiz","Matthew","Ali"];
 var yPositions = [0,100];
 var gameOver = 0;
 var currentScene=0;
@@ -90,6 +92,7 @@ Button.prototype.handleMouseClick = function() {
 var Rabbit = function(x, y){
     this.x = x;
     this.y = y;
+    this.name=name[floor(random(5))];
     this.speed = 0;
     this.angle = 90;
     this.steps = 0;
@@ -175,7 +178,7 @@ draw = function() {
                 rabbits[i].hop();
             }
         }
-        println(gameOver);
+        
         if(rabbits[i].y<20){
             gameOver=1;
              //background
@@ -183,7 +186,9 @@ background(15, 112, 0);
 
 
 textSize(37);
-text("You Have Defeated \n The Fire Bunnies", 193, 227);
+text(rabbits[i].name+" Has Defeated \n The Fire Bunnies", 193, 227);
+
+//text("You Have Defeated \n The Fire Bunnies", 193, 227);
 if(mouseIsPressed && mouseY<=200 && mouseY >=0){
         fill(189, 15, 15);
     }
